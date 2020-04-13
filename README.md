@@ -1,68 +1,12 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# SPA en React - Redux - Styled components
 
-## Available Scripts
+Proyecto se basa en una elaboración de una single page application(SPA) utilizando React, con el flux de Redux, y para los estilos se uso la librería de estilos Styled Components.
 
-In the project directory, you can run:
+Esta SPA contiene 3 componentes: 1.- El primero representa un componente de búsqueda (input form, search button), a este componente es sobre el cual se hacen las acciones y el fetch. 2.- Un segundo componente que representa de una CardList, 3.- Y por último el componente que contiene cada Card.
 
-### `yarn start`
+Para el manejo de datos se realizó una Api, en nodejs y express. En manejo de datos en esta Api, se hace a través de un archivo Json. Es decir, no maneja bases de datos. Solo se hizo para testeo del SPA.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+La aplicación del front se levanta en el localhost:3000, para hacerlo y probarla solo debe decargar el proyecto, y aplicar npm i, para instalar las dependencias.
+Antes de ejecutar ( con npm start), asegure de haber descargado y levantado el API.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+El APi para esta SPA se encuentra en: <https://github.com/dorisjpch/api-node-express-person>, una vez descargado, le puedes instalar las dependencias con npm i. Levanta por el puerto 9009, ejemplo: <http://localhost:9009/api/people/maria>
